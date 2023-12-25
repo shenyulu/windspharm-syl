@@ -34,7 +34,7 @@ package_data = {
 with open(os.path.join(os.path.dirname(__file__), 'README.md'), 'r') as f:
     long_description = f.read()
 
-setup(name='windspharm',
+setup(name='windspharm-syl',
       version=versioneer.get_version(),
       cmdclass=versioneer.get_cmdclass(),
       description='vector wind analysis in spherical coordinates',
@@ -45,4 +45,4 @@ setup(name='windspharm',
       long_description_content_type='text/markdown',
       packages=packages,
       package_data=package_data,
-      install_requires=['numpy', 'pyspharm >= 1.0.8'],)
+      install_requires=['numpy >= 1.24.3', 'pyspharm-syl >= 1.0.8'],)
