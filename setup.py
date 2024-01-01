@@ -35,8 +35,9 @@ with open(os.path.join(os.path.dirname(__file__), 'README.md'), 'r') as f:
     long_description = f.read()
 
 setup(name='windspharm-syl',
-      version=versioneer.get_version(),
-      cmdclass=versioneer.get_cmdclass(),
+    #   version=versioneer.get_version(),
+      version='1.7.0',
+    #   cmdclass=versioneer.get_cmdclass(),
       description='vector wind analysis in spherical coordinates',
       author='Andrew Dawson',
       author_email='dawson@atm.ox.ac.uk',
